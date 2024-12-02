@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width-device-width", initial-scale="1.0">
+        <title>Drop-down Profile Menu</title>
+        <link rel="stylesheet" href="profile.css"
+    </head>
+    <body>
+        <div class="hero">
+            <nav>
+                <img src="#" class="logo">
+                <ul>
+                    <li> <a href="#">Home</a></li>
+                    <li> <a href="#">Features</a></li>
+                    <li> <a href="#">About</a></li>
+                    <li> <a href="#">Contact</a></li>
+                </ul>
+                <img src="C:\Users\bhavya khandelwal\Downloads\user.jpeg" class="user-pic" onclick="toggleMenu()">
+
+                    <div class="sub-menu-wrap" id="subMenu">
+                        <div class="sub-menu">
+                    <div class="user-info">
+                        <img src="#">
+                            <h3>Ayushi khandelwal</h3>
+                </div>
+                <hr>
+                    <a href="#" class="sub-menu-link">
+                        <img src="profile">
+                        <p>Edit Profile</p>
+                        <span></span>
+                    </a>
+
+                    <a href="#" class="sub-menu-link">
+                        <img src="settings">
+                        <p>Settings & Privacy</p>
+                        <span></span>
+                    </a>
+
+                    <a href="#" class="sub-menu-link">
+                        <img src="help">
+                        <p>Help & Support</p>
+                        <span></span>
+                    </a>
+
+                    <a href="#" class="sub-menu-link">
+                        <img src="logout">
+                        <p>Logout</p>
+                        <span></span>
+                    </a>
+                </div>
+                </div>
+            </nav>
+        </div>
+
+        <script>
+            let subMenu = document.getElementById("subMenu");
+
+            function toogleMenu(){
+                subMenu.classList.toggle("open-menu");
+            }
+            
+        </script>
+    </body>
+</html>
